@@ -1,0 +1,16 @@
+Algoritmo: Calcular MCD con Euclides
+Inicio 
+ Variables: Enteros a, b, n1, n2, residuo
+ Escribir "Ingrese el primer numero"
+ Leer a
+ Escribir "Ingrese el segundo numero"
+ Leer b
+ Asignar n1 = a
+ Asignar n2 = b
+   Mientras b sea diferente de 0 hacer 
+    residuo = a % b
+    a = b
+    b = residuo
+   Fin Mientras
+ Escribir " El MCD de ", n1, " y ", n2, " es ", a
+Fin

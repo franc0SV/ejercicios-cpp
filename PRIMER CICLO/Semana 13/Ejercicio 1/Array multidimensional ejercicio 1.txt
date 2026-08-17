@@ -1,0 +1,62 @@
+Array multidimensional ejercicio 1:
+
+Algoritmo: Control de Prestamos en una biblioteca.
+
+    Dimension usuarios[5], tipos_de_libros[4], prestamos[5, 4], total_libros[4]
+    Definir user_ganador, tipo_ganador Como Cadena
+
+    tipos_de_libros[0] <- "novela"
+    tipos_de_libros[1] <- "historia"
+    tipos_de_libros[2] <- "ciencia"
+    tipos_de_libros[3] <- "arte"
+
+    Para j <- 0 Hasta 3 Hacer
+        total_libros[j] <- 0
+    FinPara
+
+    max_user <- -1
+    max_tipo <- -1
+
+    Para i <- 0 Hasta 4 Hacer
+        Escribir "Ingresa el nombre del usuario ", i + 1, ": "
+        Leer usuarios[i]
+    FinPara
+
+    Escribir ""
+    Escribir "--Registro de prestamos--"
+
+    Para i <- 0 Hasta 4 Hacer
+        Escribir ""
+        Escribir "Para ", usuarios[i], ": "
+        suma_usuario <- 0
+        
+        Para j <- 0 Hasta 3 Hacer
+            Escribir "Cantidad de libros de ", tipos_de_libros[j], ": "
+            Leer prestamos[i, j]
+            suma_usuario <- suma_usuario + prestamos[i, j]
+            total_libros[j] <- total_libros[j] + prestamos[i, j]
+        FinPara
+        
+        Escribir usuarios[i], " se llevo: ", suma_usuario, " libros."
+        
+        Si suma_usuario > max_user Entonces
+            max_user <- suma_usuario
+            user_ganador <- usuarios[i]
+        FinSi
+    FinPara
+
+    Escribir ""
+    Escribir "-- Total de prestamos por tipo de libro --"
+    Para j <- 0 Hasta 3 Hacer
+        Escribir tipos_de_libros[j], ": ", total_libros[j], " prestamos."
+        Si total_libros[j] > max_tipo Entonces
+            max_tipo <- total_libros[j]
+            tipo_ganador <- tipos_de_libros[j]
+        FinSi
+    FinPara
+
+    Escribir ""
+    Escribir "La persona que mas libros presto fue: ", user_ganador, " (", max_user, " libros)."
+    Escribir "El tipo de libro mas solicitado fue: ", tipo_ganador, " (", max_tipo, " solicitudes)."
+
+FinAlgoritmo

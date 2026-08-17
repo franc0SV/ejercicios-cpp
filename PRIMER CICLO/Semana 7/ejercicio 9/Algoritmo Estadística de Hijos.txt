@@ -1,0 +1,24 @@
+Algoritmo: Estadística de Hijos
+Inicio
+  Variables: Enteros hijos, i, menosde3, de3a5, masde6
+  Asignar menosde3 = 0
+  Asignar de3a5 = 0
+  Asignar masde6 = 0
+
+Para i = 1 hasta 30 hacer
+    hijos = Aleatorio(1, 7)
+    Escribir "Persona ", i, " : ", hijos
+    
+    Si hijos < 3 entonces
+      menosde3 = menosde3 + 1
+    Sino si hijos >= 3 y hijos <= 5 entonces
+      de3a5 = de3a5 + 1
+    Sino
+      masde6 = masde6 + 1
+    Fin Si
+  Fin Para
+
+  Escribir "Cantidad con menos de 3 hijos: ", menosde3
+  Escribir "Cantidad con 3 a 5 hijos: ", de3a5
+  Escribir "Cantidad con por lo menos 6 hijos: ", masde6
+Fin

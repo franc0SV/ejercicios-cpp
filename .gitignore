@@ -1,0 +1,19 @@
+# Archivos generados por el compilador (Dev-C++ / gcc)
+*.exe
+*.o
+*.obj
+*.layout
+*.dev
+Makefile.win
+*.depend
+*.dsp
+*.dsw
+*.cbp
+*.user
+
+# VSCode
+.vscode/
+
+# Windows
+Thumbs.db
+Desktop.ini

@@ -1,0 +1,20 @@
+Inicio 
+   Leer a
+   Leer b
+   Leer operación (+ - * / % ^)
+   Si operación = '+' entonces escribir "a + b"
+   Sino si operación = '-' entonces escribir "a - b"
+   Sino si operación = '*' entonces escribir "a * b"
+   Sino si operación = '/' 
+     Si b = 0 entonces escribir "error, b no puede ser 0"
+   Sino entonces escribir "a / b"
+     Fin si
+  Sino si operación = '%' 
+     Si b = 0 entonces escribir "error, b no puede ser 0"
+   Sino entonces escribir Residuo (a, b) //fmod
+     Fin si
+   Sino si operación = '^' entonces escribir Potencia(a, b) //pow
+   Sino escribir "Operación no valida"
+     Fin si
+Fin
+ 

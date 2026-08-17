@@ -1,0 +1,25 @@
+Algoritmo SalarioNeto
+    Definir horas, tarifa, sueldo_bruto, sueldo_neto, impuestos Como Real
+    Escribir "Ingrese horas trabajadas: "
+    Leer horas
+    Escribir "Ingrese tarifa por hora: "
+    Leer tarifa
+
+    Si horas <= 35 Entonces
+        sueldo_bruto = horas * tarifa
+    SiNo
+        sueldo_bruto = (35 * tarifa) + ((horas - 35) * tarifa * 1.5)
+    FinSi
+
+    impuestos = 0
+    Si sueldo_bruto > 2000 Entonces
+        Si sueldo_bruto <= 3000 Entonces
+            impuestos = (sueldo_bruto - 2000) * 0.20
+        SiNo
+            impuestos = (1000 * 0.20) + ((sueldo_bruto - 3000) * 0.30)
+        FinSi
+    FinSi
+
+    sueldo_neto = sueldo_bruto - impuestos
+    Escribir "El sueldo neto es: ", sueldo_neto
+FinAlgoritmo

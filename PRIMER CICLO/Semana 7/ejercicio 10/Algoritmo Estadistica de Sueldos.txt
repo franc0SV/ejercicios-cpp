@@ -1,0 +1,28 @@
+Algoritmo: Estadistica de Sueldos de Empleados
+Inicio
+  Variables: Enteros sueldo, i, menos1750, entre1750y2500, mas2500, sumaSueldos
+  Variables: Real promedio
+  Asignar menos1750 = 0
+  Asignar entre1750y2500 = 0
+  Asignar mas2500 = 0
+  Asignar sumaSueldos = 0
+Para i = 1 hasta 100 hacer
+    sueldo = Aleatorio(850, 3150)
+    Escribir "Empleado ", i, " gana: S/. ", sueldo
+    
+    sumaSueldos = sumaSueldos + sueldo
+  
+    Si sueldo < 1750 entonces
+      menos1750 = menos1750 + 1
+    Sino si sueldo >= 1750 y sueldo < 2500 entonces
+      entre1750y2500 = entre1750y2500 + 1
+    Sino
+      mas2500 = mas2500 + 1
+    Fin Si
+  Fin Para
+promedio = sumaSueldos / 100
+Escribir "El sueldo promedio es: S/. ", promedio
+  Escribir "Ganan menos de S/. 1750: ", menos1750
+  Escribir "Ganan entre S/. 1750 y S/. 2500: ", entre1750y2500
+  Escribir "Ganan S/. 2500 o mas: ", mas2500
+Fin

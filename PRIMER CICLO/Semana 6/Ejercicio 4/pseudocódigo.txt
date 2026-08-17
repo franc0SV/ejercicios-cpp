@@ -1,0 +1,51 @@
+Inicio
+    Leer minutos
+    Leer observaciones
+    // Puntaje por puntualidad
+    Si minutos = 0 Entonces
+        punt_puntualidad ← 10
+    SinoSi minutos >= 1 Y minutos <= 2 Entonces
+        punt_puntualidad ← 8
+    SinoSi minutos >= 3 Y minutos <= 5 Entonces
+        punt_puntualidad ← 6
+    SinoSi minutos >= 6 Y minutos <= 9 Entonces
+        punt_puntualidad ← 4
+    Sino
+        punt_puntualidad ← 0
+    FinSi
+    // Puntaje por rendimiento
+    Si observaciones = 0 Entonces
+        punt_rendimiento ← 10
+    SinoSi observaciones = 1 Entonces
+        punt_rendimiento ← 8
+    SinoSi observaciones = 2 Entonces
+        punt_rendimiento ← 5
+    SinoSi observaciones = 3 Entonces
+        punt_rendimiento ← 1
+    Sino
+        punt_rendimiento ← 0
+    FinSi
+    // Puntaje total
+    punt_total ← punt_puntualidad + punt_rendimiento
+
+    // Tarifa por punto
+    Si punt_total < 11 Entonces
+        tarifa ← 2.5
+    SinoSi punt_total >= 11 Y punt_total <= 13 Entonces
+        tarifa ← 5.0
+    SinoSi punt_total >= 14 Y punt_total <= 16 Entonces
+        tarifa ← 7.5
+    SinoSi punt_total >= 17 Y punt_total <= 19 Entonces
+        tarifa ← 10.0
+    SinoSi punt_total = 20 Entonces
+        tarifa ← 12.5
+    FinSi
+    // Bonificación
+    bonificacion ← punt_total * tarifa
+    // Salida
+    Escribir "Puntaje puntualidad: ", punt_puntualidad
+    Escribir "Puntaje rendimiento: ", punt_rendimiento
+    Escribir "Puntaje total: ", punt_total
+    Escribir "Tarifa por punto: ", tarifa
+    Escribir "Bonificacion anual: ", bonificacion
+Fin

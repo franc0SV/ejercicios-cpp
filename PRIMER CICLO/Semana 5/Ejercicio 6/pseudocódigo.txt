@@ -1,0 +1,18 @@
+Algoritmo AreaTriangulo
+    Definir a, b, c, s, area Como Real
+    Escribir "Ingrese lado a: "
+    Leer a
+    Escribir "Ingrese lado b: "
+    Leer b
+    Escribir "Ingrese lado c: "
+    Leer c
+
+    s = (a + b + c) / 2
+
+    Si (s > a Y s > b Y s > c) Entonces
+        area = sqrt(s * (s - a) * (s - b) * (s - c))
+        Escribir "El área del triángulo es: ", area
+    SiNo
+        Escribir "El triángulo no existe"
+    FinSi
+FinAlgoritmo

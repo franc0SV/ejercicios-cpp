@@ -1,0 +1,7 @@
+
+
+|Algoritmo Ejercicio\_Potencia\_Par<br />    Definir base, exponente, resultadoFinal Como Entero<br />    <br />    Repetir<br />        Escribir "Ingrese la base entero positivo: "<br />        Leer base<br />        Escribir "Ingrese el exponente entero positivo: "<br />        Leer exponente<br />        <br />        Si base <= 0 O exponente <= 0 Entonces<br />            Escribir "Error, ambos numeros deben ser positivos."<br />        FinSi<br />    Hasta Que base > 0 Y exponente > 0<br />    <br />    resultadoFinal <- calcularPotencia(base, exponente)<br />    imprimirPotenciaSipar(resultadoFinal)<br />FinAlgoritmo|Algoritmo Ejercicio\_Potencia\_Par<br />    Definir base, exponente, resultadoFinal Como Entero<br />    <br />    Repetir<br />        Escribir "Ingrese la base entero positivo: "<br />        Leer base<br />        Escribir "Ingrese el exponente entero positivo: "<br />        Leer exponente<br />        <br />        Si base <= 0 O exponente <= 0 Entonces<br />            Escribir "Error, ambos numeros deben ser positivos."<br />        FinSi<br />    Hasta Que base > 0 Y exponente > 0<br />    <br />    resultadoFinal <- calcularPotencia(base, exponente)<br />    imprimirPotenciaSipar(resultadoFinal)<br />FinAlgoritmo|Funcion imprimirPotenciaSipar(resultadoPotencia)<br />    Si resultadoPotencia % 2 == 0 Entonces<br />        Escribir "El resultado ", resultadoPotencia, " es par"<br />    Sino<br />        Escribir "El resultado no puede ser impar. "<br />    FinSi<br />FinFuncion|
+|-|-|-|
+
+
+
